@@ -22,15 +22,13 @@ objects:
   spec:
     runPolicy: "Serial" 
     triggers: 
-      -
-        type: "GitHub"
+      - type: "GitHub"
         github:
           secret: "secret101"
       - type: "Generic"
         generic:
           secret: "secret101"
-      -
-        type: "ImageChange"
+      - type: "ImageChange"
     source: 
       git:
         uri: "https://github.com/CloudSihmar/spring-boot-hello-world.git"
